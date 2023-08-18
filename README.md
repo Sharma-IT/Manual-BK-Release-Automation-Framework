@@ -4,13 +4,13 @@ Automation framework designed to automate build deploys and releases, with a foc
 
 ## Features
 
-* Automation Tests: The framework includes a function to deploy a build to run automation tests and verify their success. It visits the specified CI tool's automation tests pipeline URL, creates a new build and then checks for successful test results. If the tests fail to pass within a specified timeout, an error message is logged.
+* **Automation Tests:** The framework includes a function to deploy a build to run automation tests and verify their success. It visits the specified CI tool's automation tests pipeline URL, creates a new build and then checks for successful test results. If the tests fail to pass within a specified timeout, an error message is logged.
 
-* Finding Blocked Builds: The framework provides a function to find blocked builds in the application client pipeline. It searches for the latest build that has passed but has also been marked as blocked. Once this type of build is found, the function clicks on it to proceed with unblocking the build.
+* **Finding Blocked Builds:** The framework provides a function to find blocked builds in the application client pipeline. It searches for the latest build that has passed but has also been marked as blocked. Once this type of build is found, the function clicks on it to proceed with unblocking the build.
 
-* Unblocking Builds: The framework includes a function to wait for a build to be unblocked. Unblocking the build includes creating a release, deploying and activating it on the QA environment, then approving the release, and activating the release on production. It clicks on the specified "Create Release" button and waits for the build to be unblocked. If the build fails to unblock within a specified timeout, an error message is logged. Otherwise, if it passes, the “Approve Release” button will be clicked on.
+* **Unblocking Builds:** The framework includes a function to wait for a build to be unblocked. Unblocking the build includes creating a release, deploying and activating it on the QA environment, then approving the release, and activating the release on production. It clicks on the specified "Create Release" button and waits for the build to be unblocked. If the build fails to unblock within a specified timeout, an error message is logged. Otherwise, if it passes, the “Approve Release” button will be clicked on.
 
-* Capturing Release Notes: The framework offers a function to capture release notes. It intercepts the specified URL to retrieve the build details. It searches for the "Changes" heading and retrieves the release notes listed beneath it. The release notes are then saved to a text file named "release notes.txt".
+* **Capturing Release Notes:** The framework offers a function to capture release notes. It intercepts the specified URL to retrieve the build details. It searches for the "Changes" heading and retrieves the release notes listed beneath it. The release notes are then saved to a text file named "release notes.txt".
 
 ## Usage
 
