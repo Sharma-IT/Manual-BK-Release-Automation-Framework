@@ -2,6 +2,16 @@
 
 Automation framework designed to automate build deploys and releases, with a focus on compatibility with Buildkite. It is intended to work in conjunction with manual checks and inspection to ensure the quality and reliability of the deployment process.
 
+This project consists of a Cypress test automation framework designed to automate build deployment and release processes within the Buildkite CI/CD platform. The goal is to leverage Cypress to programmatically perform critical release tasks such as triggering build pipelines, waiting for approvals, and capturing release notes.
+
+Given the business requirements around manual quality checks and verification, Cypress was selected for its interactive test runner which enables "walking through" automated test steps while inspecting application state and screenshots. This provides greater visibility into the release process compared to headless tools.
+
+The framework is intended to complement, not fully replace, manual testing and validation. Tests are structured around stages requiring human sign-off, such as waiting for builds to be approved and unblocked before progression. This hybrid approach balances automation with manual oversight for the level of reliability and governance needed.
+
+Built-in Cypress capabilities like automatic wait assertions, network stubbing, and test retries provide resilience against flakiness when automating the UI. The test runner's interactive mode also aids debugging and troubleshooting capabilities.
+
+Overall, the solution aims to automate the repetitive aspects of release management, while still maintaining necessary human verification points - improving velocity and reliability of the end-to-end deployment process.
+
 ## Features
 
 * **Automation Tests:** The framework includes a function to deploy a build to run automation tests and verify their success. It visits the specified CI tool's automation tests pipeline URL, creates a new build and then checks for successful test results. If the tests fail to pass within a specified timeout, an error message is logged.
