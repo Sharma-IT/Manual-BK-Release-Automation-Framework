@@ -65,8 +65,8 @@ npx cypress open
 
 This automation framework relies on the following dependencies:
 
-* [Cypress:](https://www.cypress.io/) A JavaScript end-to-end testing framework.
-* [Lodash:](https://lodash.com/) A JavaScript utility library delivering modularity, performance & extras.
+* [Cypress](https://www.cypress.io/) - A JavaScript end-to-end testing framework.
+* [Lodash](https://lodash.com/) - A JavaScript utility library delivering modularity, performance & extras.
 
 ## Compatibility
 
