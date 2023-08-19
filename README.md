@@ -41,13 +41,13 @@ cd Release-Automation-Framework
 npm install
 ```
 
-4. Configure the environment variables in the Cypress configuration file (```cypress.env.json```) to provide the required URLs and button names for your CI tool.
+4. Configure the environment variables in the Cypress configuration file (`cypress.env.json`) to provide the required URLs and button names for your CI tool.
 
-5. Comment out or use ```it.skip``` for functions that you don’t want to run.
+5. Comment out or use `it.skip` for functions that you don’t want to run.
 
-6. Make sure to add a ```cy.wait``` command before the “Approve Release” button is clicked if you need to do manual testing on the QA environment, the command has to be added within the unBlockBuild function (```release function.js```).
+6. Make sure to add a `cy.wait` command before the “Approve Release” button is clicked if you need to do manual testing on the QA environment, the command has to be added within the unBlockBuild function (`release function.js`).
 
-7. Accordingly modify hardcoded variables ‘Passed, ‘blocked’ and ‘Next ›’ in the findPassAndBlockedBuild function (```release function.js```), **if you’re not using Buildkite.**
+7. Accordingly modify hardcoded variables ‘Passed, ‘blocked’ and ‘Next ›’ in the findPassAndBlockedBuild function (`release function.js`), **if you’re not using Buildkite.**
   
 8. Modify any code where needed to better adapt the framework to the CI tool of your choice.
    
