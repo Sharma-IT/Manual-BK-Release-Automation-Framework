@@ -12,7 +12,7 @@ Built-in Cypress capabilities like automatic wait assertions, network stubbing, 
 
 Overall, the solution aims to automate the repetitive aspects of release management, while still maintaining necessary human verification points - improving velocity and reliability of the end-to-end deployment process.
 
-#### Features
+## Features
 
 * **Automation Tests:** The framework includes a function to deploy a build to run automation tests and verify their success. It visits the specified CI tool's automation tests pipeline URL, creates a new build and then checks for successful test results. If the tests fail to pass within a specified timeout, an error message is logged.
 
@@ -22,7 +22,7 @@ Overall, the solution aims to automate the repetitive aspects of release managem
 
 * **Capturing Release Notes:** The framework offers a function to capture release notes. It intercepts the specified URL to retrieve the build details. It searches for the "Changes" heading and retrieves the release notes listed beneath it. The release notes are then saved to a text file named "release notes.txt".
 
-#### Usage
+## Usage
 
 1. Clone the repository:
 ```sh
