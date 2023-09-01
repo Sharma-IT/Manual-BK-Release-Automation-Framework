@@ -12,7 +12,7 @@ Built-in Cypress capabilities like automatic wait assertions, network stubbing, 
 
 Overall, the solution aims to automate the repetitive aspects of release management, while still maintaining necessary human verification points - improving velocity and reliability of the end-to-end deployment process.
 
-# Features
+#### Features
 
 * **Automation Tests:** The framework includes a function to deploy a build to run automation tests and verify their success. It visits the specified CI tool's automation tests pipeline URL, creates a new build and then checks for successful test results. If the tests fail to pass within a specified timeout, an error message is logged.
 
@@ -22,22 +22,20 @@ Overall, the solution aims to automate the repetitive aspects of release managem
 
 * **Capturing Release Notes:** The framework offers a function to capture release notes. It intercepts the specified URL to retrieve the build details. It searches for the "Changes" heading and retrieves the release notes listed beneath it. The release notes are then saved to a text file named "release notes.txt".
 
-# Usage
+#### Usage
 
 1. Clone the repository:
-
-```
+```sh
 git clone https://github.com/sharma-it/Release-Automation-Framework.git
 ```
 
 2. Change into the project directory:
-
-```
+```sh
 cd Release-Automation-Framework
 ```
 
 3. To install neccessary dependencies:
-```
+```sh
 npm install
 ```
 
@@ -52,34 +50,34 @@ npm install
 8. Modify any code where needed to better adapt the framework to the CI tool of your choice.
    
 9. Run the tests using the Cypress test runner by executing the command:
-```
+```sh
 npx cypress run
 ```
 
 Or:
-```
+```sh
 npx cypress open
 ```
 
-# Dependencies
+## Dependencies
 
 This automation framework relies on the following dependencies:
 
 * [Cypress](https://www.cypress.io/) - A JavaScript end-to-end testing framework.
 * [Lodash](https://lodash.com/) - A JavaScript utility library delivering modularity, performance & extras.
 
-# Compatibility
+## Compatibility
 
 While this automation framework is designed for Buildkite, this framework may be adaptable to other CI tools with some modification.
 
-# Contributing
+## Contributing
 
 Pull requests are welcomed. For major changes, please open an issue first to discuss what you would like to change.
 
-# Contact
+## Contact
 
 Shubham Sharma - [My LinkedIn](https://www.linkedin.com/in/sharma-it/) - shubhamsharma.emails@gmail.com.
 
-# License
+## License
 
 This project is licensed under the GPL 3.0 License - see the [LICENSE](LICENSE) file for details.
