@@ -12,6 +12,16 @@ Built-in Cypress capabilities like automatic wait assertions, network stubbing, 
 
 Overall, the solution aims to automate the repetitive aspects of release management, while still maintaining necessary human verification points - improving velocity and reliability of the end-to-end deployment process.
 
+# Table of Contents
+
+1. [Features](#features)
+2. [Usage](#usage)
+3. [Dependencies](#dependencies)
+4. [Compatibility](#compatibility)
+5. [Contributing](#contributing)
+6. [Contact](#contact)
+7. [License](#license)
+
 ## Features
 
 * **Automation Tests:** The framework includes a function to deploy a build to run automation tests and verify their success. It visits the specified CI tool's automation tests pipeline URL, creates a new build and then checks for successful test results. If the tests fail to pass within a specified timeout, an error message is logged.
