@@ -1,4 +1,4 @@
-# Release Automation Framework
+# Manual-BK-Release-Automation-Framework
 
 Automation framework designed to automate build deploys and releases, with a focus on compatibility with Buildkite. It is intended to work in conjunction with manual checks and inspection to ensure the quality and reliability of the deployment process.
 
@@ -36,12 +36,12 @@ Overall, the solution aims to automate the repetitive aspects of release managem
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/sharma-it/Release-Automation-Framework.git
+git clone https://github.com/sharma-it/Manual-BK-Release-Automation-Framework.git
 ```
 
 2. Change into the project directory:
 ```sh
-cd Release-Automation-Framework
+cd Manual-BK-Release-Automation-Framework
 ```
 
 3. To install neccessary dependencies:
